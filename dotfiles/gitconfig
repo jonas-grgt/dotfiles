@@ -12,7 +12,7 @@
     type = cat-file -t
     dump = cat-file -p
 [user]
-	name = Jonas Geiregat
-	email = jonas.geiregat@mateco.eu
+    name = Jonas Geiregat
+    email = jonas.geiregat@mateco.eu
 [core]
-	pager = 
+    pager = 
