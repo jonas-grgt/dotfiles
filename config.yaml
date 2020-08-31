@@ -1,0 +1,12 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
+profiles:
+  Jonass-MacBook-Pro.local:
+    dotfiles:
+    - f_gitconfig
