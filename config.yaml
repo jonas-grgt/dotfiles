@@ -6,7 +6,11 @@ dotfiles:
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
+  f_ideavimrc:
+    src: ideavimrc
+    dst: ~/.ideavimrc
 profiles:
   Jonass-MacBook-Pro.local:
     dotfiles:
     - f_gitconfig
+    - f_ideavimrc
