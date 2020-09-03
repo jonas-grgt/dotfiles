@@ -6,7 +6,7 @@
     co = checkout
     plo = pull origin
     pso = push origin
-    ci = commit
+    ci = commit -a -m
     br = branch
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     type = cat-file -t
