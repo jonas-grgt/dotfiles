@@ -36,3 +36,8 @@ source <(kubectl completion zsh)  # setup autocomplete in zsh into the current s
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#475c61,bg=none"
 
 source /Users/jonas/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# make GNU commands available
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
+
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
