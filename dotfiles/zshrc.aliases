@@ -1,0 +1,15 @@
+alias zshconfig="vi ~/.zshrc"
+alias ohmyzsh="vi ~/.oh-my-zsh"
+alias f=fuck
+alias g=git
+alias v=vim
+alias k=kubectl
+alias kpfm='k port-forward $(k get pods | grep -i "^ms-mysite" | cut -f 1 -d " ")'
+alias d=docker
+alias m=./mvnw
+alias mcv="./mvnw clean verify"
+alias mci="./mvnw clean install"
+alias watch="watch "
+alias h="heroku"
+alias ddr=~/.dotfiles/dotdrop.sh --cfg=~/.dotfiles/config.yaml
+alias ddrd="cd ~/.dotfiles"
