@@ -14,5 +14,5 @@
 [user]
     name = Jonas Geiregat
     email = jonas.geiregat@mateco.eu
-[core]
-    pager = 
+[pager]
+    log = false
