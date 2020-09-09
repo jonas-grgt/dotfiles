@@ -2,6 +2,7 @@ config:
   backup: true
   create: true
   dotpath: dotfiles
+  diff_command: "colordiff -y --suppress-common-lines {1} {0}"
 dotfiles:
   f_gitconfig:
     src: gitconfig
