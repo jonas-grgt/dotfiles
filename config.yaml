@@ -19,7 +19,7 @@ dotfiles:
     src: zshrc.mac
     dst: ~/.zshrc.mac
 profiles:
-  Jonass-MacBook-Pro.local:
+  mac:
     dotfiles:
     - f_gitconfig
     - f_ideavimrc
