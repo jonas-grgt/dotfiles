@@ -16,3 +16,5 @@
     email = jonas.geiregat@mateco.eu
 [pager]
     log = true
+[merge]
+    conflictstyle = diff3
