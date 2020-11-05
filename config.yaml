@@ -23,6 +23,12 @@ dotfiles:
     src: zshrc
     dst: ~/.zshrc
 profiles:
+  coolmaster:
+    dotfiles:
+    - f_gitconfig
+    - f_ideavimrc
+    - f_zshrc.aliases
+    - f_zshrc.base
   mac:
     dotfiles:
     - f_gitconfig
