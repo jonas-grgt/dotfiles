@@ -1,0 +1,5 @@
+source ~/.zshrc.base
+source ~/.zshrc.aliases
+if [[ $(uname -s) -eq 'Darwin' ]]; then 
+    source ~/.zshrc.mac
+fi;
