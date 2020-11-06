@@ -22,6 +22,21 @@ dotfiles:
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
+  f_vimrc:
+    src: vimrc
+    dst: ~/.vimrc
+  f_plugins.vim:
+    src: vim/plugins.vim
+    dst: ~/.vim/plugins.vim
+  f_globals.vim:
+    src: vim/globals.vim
+    dst: ~/.vim/globals.vim
+  f_functions.vim:
+    src: vim/functions.vim
+    dst: ~/.vim/functions.vim
+  f_keybindings.vim:
+    src: vim/keybindings.vim
+    dst: ~/.vim/keybindings.vim
 profiles:
   coolmaster:
     dotfiles:
@@ -30,6 +45,11 @@ profiles:
     - f_zshrc.aliases
     - f_zshrc.base
     - f_zshrc
+    - f_vimrc
+    - f_plugins.vim
+    - f_globals.vim
+    - f_functions.vim
+    - f_keybindings.vim
   mac:
     dotfiles:
     - f_gitconfig
@@ -38,3 +58,8 @@ profiles:
     - f_zshrc.base
     - f_zshrc.mac
     - f_zshrc
+    - f_vimrc
+    - f_plugins.vim
+    - f_globals.vim
+    - f_functions.vim
+    - f_keybindings.vim

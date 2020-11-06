@@ -1,0 +1,12 @@
+source ~/.vim/plugins.vim
+source ~/.vim/globals.vim
+source ~/.vim/functions.vim
+source ~/.vim/keybindings.vim
+
+nnoremap <silent> <tab> :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
+nnoremap <silent> <s-tab> :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
+
+autocmd FileType typescript setlocal tabstop=2 shiftwidth=2 sts=2
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 sts=2
+autocmd FileType json setlocal tabstop=2 shiftwidth=2 sts=2
+
