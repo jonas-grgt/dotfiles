@@ -2,9 +2,7 @@ set visualbell
 set noerrorbells
 set clipboard+=unnamed
 
-nnoremap d "dd           "send latest delete to d register
-nnoremap D "dD           "send latest delete to d register 
-nnoremap dd "ddd         "send latest delete to d register
-nnoremap x "_x           "send char deletes to black hole, not worth saving
-nnoremap <leader>p "dp   "paste what was deleted
-nnoremap <leader>P "dP   "paste what was deleted
+nnoremap dd "-dd
+nnoremap dw "-dw
+nnoremap D "-D
+nnoremap x "-x
