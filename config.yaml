@@ -29,6 +29,7 @@ profiles:
     - f_ideavimrc
     - f_zshrc.aliases
     - f_zshrc.base
+    - f_zshrc
   mac:
     dotfiles:
     - f_gitconfig
