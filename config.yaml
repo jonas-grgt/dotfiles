@@ -37,6 +37,9 @@ dotfiles:
   f_keybindings.vim:
     src: vim/keybindings.vim
     dst: ~/.vim/keybindings.vim
+  f_tmux.conf:
+    src: tmux.conf
+    dst: ~/.tmux.conf
 profiles:
   coolmaster:
     dotfiles:
@@ -50,6 +53,7 @@ profiles:
     - f_globals.vim
     - f_functions.vim
     - f_keybindings.vim
+    - f_tmux.conf
   mac:
     dotfiles:
     - f_gitconfig
@@ -63,3 +67,4 @@ profiles:
     - f_globals.vim
     - f_functions.vim
     - f_keybindings.vim
+    - f_tmux.conf
