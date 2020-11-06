@@ -40,6 +40,9 @@ dotfiles:
   f_tmux.conf:
     src: tmux.conf
     dst: ~/.tmux.conf
+  f_p10k.zsh:
+    src: p10k.zsh
+    dst: ~/.p10k.zsh
 profiles:
   coolmaster:
     dotfiles:
@@ -54,6 +57,7 @@ profiles:
     - f_functions.vim
     - f_keybindings.vim
     - f_tmux.conf
+    - f_p10k.zsh
   mac:
     dotfiles:
     - f_gitconfig
@@ -68,3 +72,4 @@ profiles:
     - f_functions.vim
     - f_keybindings.vim
     - f_tmux.conf
+    - f_p10k.zsh
