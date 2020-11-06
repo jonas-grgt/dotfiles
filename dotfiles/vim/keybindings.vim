@@ -1,6 +1,12 @@
+let mapleader = ","
+
+nmap <leader>o :Files<CR>
+nmap <leader>O :GFiles<CR>
+nmap <leader>f :Rg 
+nmap <leader>h :History <CR>
+nmap <leader>m :Marks <CR>
+
 map NHL :nohl<CR>
-nmap <F2> :Rg 
-nmap <F3> :Files<CR>
 nnoremap <F4> m`gg=G``
 "imap <C-1> :Vexplore<CR>
 nmap <S-F6> :call Rnvar()<CR>
