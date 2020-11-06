@@ -15,11 +15,10 @@ nnoremap BN :bn<CR>
 nnoremap BP :bp<CR>
 nnoremap <C-_> :Commentary<CR>
 
-"nnoremap d "dd           "send latest delete to d register
-"nnoremap D "dD           "send latest delete to d register
-nnoremap dd "ddd         "send latest delete to d register
-"nnoremap x "_x           "send char deletes to black hole, not worth saving
-"nnoremap <leader>p "dp   "paste what was deleted
-"nnoremap <leader>P "dP   "paste what was deleted
+nnoremap d "-d
+nnoremap D "-D
+nnoremap dd "-dd         
+nnoremap x "-x
+nnoremap <leader>p "-p   "paste what was deleted
 
 imap <C-u> <esc>viw U
