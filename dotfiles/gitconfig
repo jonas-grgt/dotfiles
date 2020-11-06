@@ -1,5 +1,5 @@
 [alias]
-    l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
     f = fetch -p
     s = status -sb
     sl = stash list --pretty=format:'%Cblue%gd%Cred: %C(yellow)%s'
