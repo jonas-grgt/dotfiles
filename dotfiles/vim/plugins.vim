@@ -19,7 +19,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'terryma/vim-multiple-cursors'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 " Initialize the plugin system
