@@ -14,7 +14,6 @@ Plug 'ap/vim-buftabline'
 Plug '907th/vim-auto-save'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'nelstrom/vim-visual-star-search '
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
