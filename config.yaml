@@ -1,3 +1,6 @@
+actions:
+  plug_install: vim +PlugClean! +PlugInstall! +qall
+  zsh_autosuggestions_install: sh scripts/install_or_update_zsh_autosuggestions.sh 
 config:
   backup: true
   create: true
@@ -19,12 +22,16 @@ dotfiles:
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
+    actions:
+      - zsh_autosuggestions_install
   f_vimrc:
     src: vimrc
     dst: ~/.vimrc
   f_plugins.vim:
     src: vim/plugins.vim
     dst: ~/.vim/plugins.vim
+    actions:
+      - plug_install
   f_globals.vim:
     src: vim/globals.vim
     dst: ~/.vim/globals.vim
