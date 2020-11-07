@@ -10,12 +10,9 @@ dotfiles:
   f_ideavimrc:
     src: ideavimrc
     dst: ~/.ideavimrc
-  f_zshrc.aliases:
-    src: zshrc.aliases
-    dst: ~/.zshrc.aliases
-  f_zshrc.base:
-    src: zshrc.base
-    dst: ~/.zshrc.base
+  f_zsh.aliases:
+    src: zsh.aliases
+    dst: ~/.zsh.aliases
   f_zshrc.mac:
     src: zshrc.mac
     dst: ~/.zshrc.mac
@@ -48,8 +45,7 @@ profiles:
     dotfiles:
     - f_gitconfig
     - f_ideavimrc
-    - f_zshrc.aliases
-    - f_zshrc.base
+    - f_zsh.aliases
     - f_zshrc
     - f_vimrc
     - f_plugins.vim
@@ -62,8 +58,7 @@ profiles:
     dotfiles:
     - f_gitconfig
     - f_ideavimrc
-    - f_zshrc.aliases
-    - f_zshrc.base
+    - f_zsh.aliases
     - f_zshrc.mac
     - f_zshrc
     - f_vimrc

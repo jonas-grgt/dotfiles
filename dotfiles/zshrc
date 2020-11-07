@@ -1,8 +1,4 @@
-source ~/.zshrc.base
-source ~/.zshrc.aliases
-if [[ $(uname -s) == 'Darwin' ]]; then 
-    source ~/.zshrc.mac
-fi;
-if [[ $(uname -s) == 'Linux' ]]; then 
-    source ~/.zshrc.linux
-fi;
+if [[ -f ~/.zsh.aliases ]]; then
+    source ~/.zsh.aliases
+fi
+source $ZSH/oh-my-zsh.sh
