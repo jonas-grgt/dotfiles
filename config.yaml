@@ -1,6 +1,6 @@
 actions:
   plug_install: vim +PlugClean! +PlugInstall! +qall
-  zsh_autosuggestions_install: sh scripts/install_or_update_zsh_autosuggestions.sh 
+  zsh_autosuggestions_install: sh scripts/install_or_update_zsh_autosuggestions.sh
 config:
   backup: true
   create: true
@@ -23,7 +23,7 @@ dotfiles:
     src: zshrc
     dst: ~/.zshrc
     actions:
-      - zsh_autosuggestions_install
+    - zsh_autosuggestions_install
   f_vimrc:
     src: vimrc
     dst: ~/.vimrc
@@ -31,7 +31,7 @@ dotfiles:
     src: vim/plugins.vim
     dst: ~/.vim/plugins.vim
     actions:
-      - plug_install
+    - plug_install
   f_globals.vim:
     src: vim/globals.vim
     dst: ~/.vim/globals.vim
@@ -47,6 +47,9 @@ dotfiles:
   f_p10k.zsh:
     src: p10k.zsh
     dst: ~/.p10k.zsh
+  f_config:
+    src: config/termite/config
+    dst: ~/.config/termite/config
 profiles:
   coolmaster:
     dotfiles:
@@ -61,6 +64,7 @@ profiles:
     - f_keybindings.vim
     - f_tmux.conf
     - f_p10k.zsh
+    - f_config
   mac:
     dotfiles:
     - f_gitconfig
