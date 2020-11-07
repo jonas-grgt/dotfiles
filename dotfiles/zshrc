@@ -1,3 +1,6 @@
+if [[ -f ~/.zshrc.mac ]]; then
+    source ~/.zshrc.mac;
+fi
 if [[ -f ~/.zsh.aliases ]]; then
     source ~/.zsh.aliases;
 fi
