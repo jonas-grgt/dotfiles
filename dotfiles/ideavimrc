@@ -6,3 +6,5 @@ nnoremap dd "-dd
 nnoremap dw "-dw
 nnoremap D "-D
 nnoremap x "-x
+nnoremap cw "-cw
+nnoremap ct "-ct
