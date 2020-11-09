@@ -53,6 +53,9 @@ dotfiles:
   f_gtk.css:
     src: config/gtk-3.0/gtk.css
     dst: ~/.config/gtk-3.0/gtk.css
+  f_zshenv:
+    src: zshenv
+    dst: ~/.zshenv
 profiles:
   coolmaster:
     dotfiles:
@@ -60,13 +63,14 @@ profiles:
     - f_ideavimrc
     - f_zsh.aliases
     - f_zshrc
+    - f_p10k.zsh
+    - f_zshenv
     - f_vimrc
     - f_plugins.vim
     - f_globals.vim
     - f_functions.vim
     - f_keybindings.vim
     - f_tmux.conf
-    - f_p10k.zsh
     - f_config
     - f_gtk.css
   mac:
@@ -76,10 +80,11 @@ profiles:
     - f_zsh.aliases
     - f_zshrc.mac
     - f_zshrc
+    - f_p10k.zsh
+    - f_zshenv
     - f_vimrc
     - f_plugins.vim
     - f_globals.vim
     - f_functions.vim
     - f_keybindings.vim
     - f_tmux.conf
-    - f_p10k.zsh
