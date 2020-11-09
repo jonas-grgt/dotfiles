@@ -56,6 +56,12 @@ dotfiles:
   f_zshenv:
     src: zshenv
     dst: ~/.zshenv
+  f_solarized-dark.rasi:
+    src: config/rofi/solarized-dark.rasi
+    dst: ~/.config/rofi/solarized-dark.rasi
+  f_sxhkdrc:
+    src: config/sxhkd/sxhkdrc
+    dst: ~/.config/sxhkd/sxhkdrc
 profiles:
   coolmaster:
     dotfiles:
@@ -73,6 +79,8 @@ profiles:
     - f_tmux.conf
     - f_config
     - f_gtk.css
+    - f_solarized-dark.rasi
+    - f_sxhkdrc
   mac:
     dotfiles:
     - f_gitconfig
