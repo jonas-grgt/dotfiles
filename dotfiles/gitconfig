@@ -21,4 +21,4 @@
 [rerere]
 	enabled = true
 [core]
-	pager = cat
+	pager = bat -p
