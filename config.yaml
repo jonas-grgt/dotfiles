@@ -1,6 +1,7 @@
 actions:
   plug_install: vim +PlugClean! +PlugInstall! +qall
   zsh_autosuggestions_install: sh scripts/install_or_update_zsh_autosuggestions.sh
+  mac_install_hostname: sh scripts/mac_install_hostname.sh
 config:
   backup: true
   create: true
@@ -62,6 +63,11 @@ dotfiles:
   f_sxhkdrc:
     src: config/sxhkd/sxhkdrc
     dst: ~/.config/sxhkd/sxhkdrc
+  f_mac_always:
+    src:
+    dst:
+    actions:
+      - mac_install_hostname
 profiles:
   coolmaster:
     dotfiles:
@@ -83,6 +89,7 @@ profiles:
     - f_sxhkdrc
   mac:
     dotfiles:
+    - f_mac_always
     - f_gitconfig
     - f_ideavimrc
     - f_zsh.aliases
