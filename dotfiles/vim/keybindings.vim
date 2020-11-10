@@ -13,6 +13,7 @@ nnoremap <F4> m`gg=G``
 nmap <S-F6> :call Rnvar()<CR>
 nnoremap <leader>w :bd<CR>
 nnoremap <leader>W :bufdo bwipeout<CR>
+nnoremap <leader>ww :%bd\|e#\|bd#<cr>\|'"
 nnoremap BN :bn<CR>
 nnoremap BP :bp<CR>
 nnoremap <C-_> :Commentary<CR>
