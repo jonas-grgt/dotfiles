@@ -14,3 +14,4 @@ fi
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 {%@@ endif @@%}
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
