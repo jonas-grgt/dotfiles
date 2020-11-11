@@ -1,6 +1,7 @@
 actions:
   plug_install: vim +PlugClean! +PlugInstall! +qall
   zsh_autosuggestions_install: sh scripts/install_or_update_zsh_autosuggestions.sh
+  zsh_aliases_exa_install: sh scripts/install_or_update_zsh_aliases_exa.sh
   mac_install_hostname: sh scripts/mac_install_hostname.sh
 config:
   backup: true
@@ -25,6 +26,7 @@ dotfiles:
     dst: ~/.zshrc
     actions:
     - zsh_autosuggestions_install
+    - zsh_aliases_exa_install
   f_vimrc:
     src: vimrc
     dst: ~/.vimrc
