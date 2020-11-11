@@ -7,4 +7,4 @@ export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{n
 export SDKMAN_DIR="$HOME/.sdkman"
 export ZSH_THEME="powerlevel10k/powerlevel10k"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#475c61,bg=none"
-export plugins=(git osx zsh-autosuggestions)
+export plugins=(git osx zsh-autosuggestions zsh-aliases-exa)

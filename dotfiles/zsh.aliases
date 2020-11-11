@@ -14,4 +14,3 @@ alias h="heroku"
 alias ddr=~/.dotfiles/dotdrop.sh --cfg=~/.dotfiles/config.yaml
 alias ddrd="cd ~/.dotfiles"
 alias s=sudo
-alias ll=exa
