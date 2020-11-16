@@ -17,7 +17,7 @@ nnoremap <leader>ww :%bd\|e#\|bd#<cr>\|'"
 nnoremap BN :bn<CR>
 nnoremap BP :bp<CR>
 nnoremap <C-_> :Commentary<CR>
-
+nnoremap <leader>1 :Fern . -toggle -reveal=% -drawer -width=40<cr>
 nnoremap d "-d
 nnoremap D "-D
 nnoremap dd "-dd         

@@ -19,7 +19,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'Quramy/tsuquyomi'
+Plug 'lambdalisue/fern.vim'
+Plug 'Yggdroot/indentLine'
 
 
 " Initialize the plugin system

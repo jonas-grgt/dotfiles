@@ -20,6 +20,7 @@ set updatetime=300
 set shortmess+=c
 " always show signcolumns
 set signcolumn=yes
+set cursorline
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
@@ -35,3 +36,4 @@ hi PmenuSel ctermfg=white ctermbg=red
 hi Folded ctermbg=None ctermfg=white
 hi Search ctermfg=Black ctermbg=Green cterm=None
 
+autocmd BufReadPre,FileReadPre *.html set cursorcolumn
