@@ -22,12 +22,6 @@ set shortmess+=c
 set signcolumn=yes
 set cursorline
 
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 20 
-
 "Highlinting
 hi CursorLine gui=NONE ctermbg=NONE cterm=NONE
 hi StatusLine gui=NONE ctermbg=yellow ctermfg=red
