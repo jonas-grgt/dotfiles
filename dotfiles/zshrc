@@ -5,8 +5,14 @@
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 [[ -s ~/.fzf.zsh ]] && source ~/.fzf.zsh
 
-{%@@ if profile == "coolmaster" @@%}
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
-{%@@ endif @@%}
+# Unlimited history size.
+export HISTSIZE=1000000
+export HISTFILE="$HOME/.history"
+# History won't be saved without the following command.
+# The maximum number of history events to save in the history file.
+export SAVEHIST=$HISTSIZE
+# Ignore duplicates.
+setopt hist_ignore_all_dups
+# Ignore commands starting with space.
+setopt hist_ignore_space
 
