@@ -30,4 +30,9 @@ hi PmenuSel ctermfg=white ctermbg=red
 hi Folded ctermbg=None ctermfg=white
 hi Search ctermfg=Black ctermbg=Green cterm=None
 
-autocmd BufReadPre,FileReadPre *.html set cursorcolumn
+"autocmd BufReadPre,FileReadPre *.html set cursorcolumn
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType typescript setlocal tabstop=2 shiftwidth=2 sts=2
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 sts=2
+autocmd FileType json setlocal tabstop=2 shiftwidth=2 sts=2
+

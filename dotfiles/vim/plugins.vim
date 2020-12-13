@@ -9,18 +9,32 @@ call plug#begin('~/.vim/plugged')
 " See all possible ways to list a plugin: https://github.com/junegunn/vim-plug
 " Ex: Plug 'https://github.com/username/reponame.git'
 "
-Plug 'leafgarland/typescript-vim'
 Plug 'ap/vim-buftabline'
+
 Plug '907th/vim-auto-save'
+
 Plug 'mattn/emmet-vim'
+
 Plug 'jiangmiao/auto-pairs'
+
 Plug 'tpope/vim-commentary'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
 Plug 'junegunn/fzf.vim'
+
 Plug 'altercation/vim-colors-solarized'
+
 Plug 'terryma/vim-multiple-cursors'
+
 Plug 'lambdalisue/fern.vim'
+
 Plug 'Yggdroot/indentLine'
+let g:indentLine_char = '⦙'
+
+Plug 'pedrohdz/vim-yaml-folds'
+
+Plug 'leafgarland/typescript-vim'
 
 
 " Initialize the plugin system
