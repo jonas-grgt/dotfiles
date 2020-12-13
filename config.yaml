@@ -69,7 +69,10 @@ dotfiles:
     src:
     dst:
     actions:
-      - mac_install_hostname
+    - mac_install_hostname
+  f_zshrc.shared:
+    src: zshrc.shared
+    dst: ~/.zshrc.shared
 profiles:
   coolmaster:
     dotfiles:
@@ -105,3 +108,4 @@ profiles:
     - f_functions.vim
     - f_keybindings.vim
     - f_tmux.conf
+    - f_zshrc.shared

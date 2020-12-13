@@ -1,4 +1,5 @@
 [[ -s ~/.zshrc.mac ]] && source ~/.zshrc.mac;
+[[ -s ~/.zshrc.shared ]] && source ~/.zshrc.shared;
 [[ -s ~/.zsh.aliases ]] && source ~/.zsh.aliases;
 [[ -s $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh;
 [[ -s ~/.p10k.zsh ]] && source ~/.p10k.zsh;
