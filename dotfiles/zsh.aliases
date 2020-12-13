@@ -3,6 +3,7 @@ alias ohmyzsh="vi ~/.oh-my-zsh"
 alias f=fuck
 alias g=git
 alias v=vim
+alias vy="v - '+set ft=yaml nomodified'"
 alias k=kubectl
 alias kpfm='k port-forward $(k get pods | grep -i "^ms-mysite" | cut -f 1 -d " ")'
 alias d=docker
