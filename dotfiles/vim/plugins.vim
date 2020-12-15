@@ -36,6 +36,13 @@ Plug 'pedrohdz/vim-yaml-folds'
 
 Plug 'leafgarland/typescript-vim'
 
+Plug 'dense-analysis/ale'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_text_changed = 'never'
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " Initialize the plugin system
 call plug#end()
