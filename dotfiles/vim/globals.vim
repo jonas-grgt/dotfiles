@@ -1,6 +1,11 @@
 set nu
 syntax on
-colorscheme solarized
+" colorscheme
+if !empty($VIM_COLOR)
+        colorscheme $VIM_COLOR
+    else
+        colorscheme solarized
+endif
 set mouse=a
 "allows to move to a different buffer without saving the current first
 set hidden 
