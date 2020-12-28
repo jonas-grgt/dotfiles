@@ -1,1 +1,1 @@
-export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config.yaml
+export KUBECONFIG=$HOME/.kube/config.yaml
