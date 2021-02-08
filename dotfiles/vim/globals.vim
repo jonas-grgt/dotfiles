@@ -41,3 +41,6 @@ autocmd FileType typescript setlocal tabstop=2 shiftwidth=2 sts=2
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 sts=2
 autocmd FileType json setlocal tabstop=2 shiftwidth=2 sts=2
 
+" default html syntax highlinting sucks, for some reason setting filetype to
+" xml gives better colors 
+autocmd BufNewFile,BufRead *.html set filetype=xml

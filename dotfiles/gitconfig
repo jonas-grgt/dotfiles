@@ -12,8 +12,8 @@
     type = cat-file -t
     dump = cat-file -p
 [user]
-    name = Jonas Geiregat
-    email = jonas.geiregat@mateco.eu
+	name = Jonas Geiregat (31198)
+	email = jonas.geiregat@tvh.com
 [pager]
     log = true
 [merge]
