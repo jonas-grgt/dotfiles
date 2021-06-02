@@ -2,6 +2,7 @@ alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias f=fuck
 alias g=git
+alias g="git commit -v -a -m "
 alias v=vim
 alias vy="v - '+set ft=yaml nomodified'"
 alias k=kubectl
