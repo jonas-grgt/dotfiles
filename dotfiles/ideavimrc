@@ -1,6 +1,7 @@
 set visualbell
 set noerrorbells
 set clipboard+=unnamed
+set so=4 # scrolloff scrolls when there are only 4 lines left
 
 nnoremap dd "-dd
 nnoremap dw "-dw
