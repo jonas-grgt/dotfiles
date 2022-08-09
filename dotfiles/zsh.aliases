@@ -9,11 +9,21 @@ alias vy="v - '+set ft=yaml nomodified'"
 alias k=kubectl
 alias kpfm='k port-forward $(k get pods | grep -i "^ms-mysite" | cut -f 1 -d " ")'
 alias d=docker
-alias m=./mvnw
-alias mcv="./mvnw clean verify"
-alias mci="./mvnw clean install"
+
+# ------
+# Maven
+# ------
+
+alias macv="[[ -s ./mvnw ]] && ./mvnw clean verify || mvn clean verify"
+alias mav="[[ -s ./mvnw ]] && ./mvnw verify || mvn verify"
+alias maci="[[ -s ./mvnw ]] && ./mvnw clean install || mvn clean install"
+alias maci-nt="[[ -s ./mvnw ]] && ./mvnw clean install -DskipTests || mvn clean install -DskipTests"
+alias mai="[[ -s ./mvnw ]] && ./mvnw install || mvn install"
+alias mai-nt="[[ -s ./mvnw ]] && ./mvnw install -DskipTests || mvn install -DskipTests"
+alias masjf="[[ -s ./mvnw ]] && ./mvnw spring-javaformat:apply || mvn spring-javaformat:apply"
+
 alias watch="watch "
 alias h="heroku"
 alias ddr=dotdrop --cfg=~/.dotfiles/config.yaml
 alias ddrd="cd ~/.dotfiles"
-alias s=sudo
+alias s=sud
