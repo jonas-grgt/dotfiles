@@ -35,9 +35,33 @@ source <(kubectl completion zsh)  # setup autocomplete in zsh into the current s
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#475c61,bg=none"
 
-source /Users/jonas/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/jonas/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # make GNU commands available
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
 
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
+
+# add python3 path
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
+
+fpath=(/usr/local/share/zsh/zsh-completions/src $fpath)
+
+HOMEBREW_NO_AUTO_UPDATE=1
+
+# add ~/.bin to PATH
+PATH=$PATH:~/.bin
+
+if [[ "$TERMINAL_EMULATOR" == "JetBrains-JediTerm" ]]; then
+  bindkey -s "µ" "^E | less ^M" # Personal Alt-M shortcut
+  bindkey "ƒ" forward-word
+  bindkey "∫" backward-word
+  bindkey "∂" kill-word
+  bindkey "¬" downcase-word
+  bindkey "ç" capitalize-word
+  bindkey "†" transpose-words
+  bindkey "≥" insert-last-word
+  # bindkey "¨ " upcase-word
+fi
+
+source /Users/jonas/.config/broot/launcher/bash/br

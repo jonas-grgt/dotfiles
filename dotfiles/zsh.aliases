@@ -2,7 +2,7 @@ alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias f=fuck
 alias g=git
-alias g="git commit -v -a -m "
+alias gcma="git commit -v -a -m "
 alias v=vim
 alias vy="v - '+set ft=yaml nomodified'"
 alias k=kubectl
@@ -13,6 +13,6 @@ alias mcv="./mvnw clean verify"
 alias mci="./mvnw clean install"
 alias watch="watch "
 alias h="heroku"
-alias ddr=~/.dotfiles/dotdrop.sh --cfg=~/.dotfiles/config.yaml
+alias ddr=dotdrop --cfg=~/.dotfiles/config.yaml
 alias ddrd="cd ~/.dotfiles"
 alias s=sudo
