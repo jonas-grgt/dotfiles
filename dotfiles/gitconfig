@@ -12,8 +12,8 @@
     type = cat-file -t
     dump = cat-file -p
 [user]
-	name = Jonas Geiregat (31198)
-	email = jonas.geiregat@tvh.com
+	name = Jonas Geiregat
+	email = jonas.grgt@gmail.com
 [pager]
     log = true
 [merge]
@@ -22,3 +22,8 @@
 	enabled = true
 [core]
 	pager = bat -p
+    # Configure Git to ensure line endings in files you checkout are correct for macOS
+    # https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+    autocrlf = input 
+[color]
+	ui = true
