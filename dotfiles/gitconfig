@@ -1,16 +1,15 @@
 [alias]
-    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
-    f = fetch -p
-    s = status -sb
-    sl = stash list --pretty=format:'%Cblue%gd%Cred: %C(yellow)%s'
-    co = checkout
-    plo = pull origin
-    pso = push origin
-    ci = commit -a -m
-    br = branch
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-    type = cat-file -t
-    dump = cat-file -p
+    l       = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+    f       = fetch -p
+    s       = status -sb
+    sal     = stash list --pretty=format:'%Cblue%gd%Cred: %C(yellow)%s'
+    co      = checkout
+    pl      = pull origin
+    ps      = push origin
+    ci      = commit -a -m
+    br      = branch
+    sw      = switch
+    swc     = switch -c
 [user]
 	name = Jonas Geiregat
 	email = jonas.grgt@gmail.com
