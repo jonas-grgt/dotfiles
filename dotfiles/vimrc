@@ -1,9 +1,0 @@
-source ~/.vim/plugins.vim
-source ~/.vim/globals.vim
-source ~/.vim/functions.vim
-source ~/.vim/keybindings.vim
-
-
-nnoremap <silent> <tab> :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
-nnoremap <silent> <s-tab> :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
-

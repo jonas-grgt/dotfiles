@@ -1,1 +1,0 @@
-if [[ -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]]; then cd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions && git pull; else git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions; fi

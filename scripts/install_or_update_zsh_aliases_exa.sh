@@ -1,1 +1,0 @@
-if [[ -d ~/.oh-my-zsh/custom/plugins/zsh-aliases-exa ]]; then cd ~/.oh-my-zsh/custom/plugins/zsh-aliases-exa && git pull; else git clone git@github.com:DarrinTisdale/zsh-aliases-exa.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-aliases-exa; fi

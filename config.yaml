@@ -1,7 +1,4 @@
 actions:
-  plug_install: vim +PlugClean! +PlugInstall! +qall
-  zsh_autosuggestions_install: sh scripts/install_or_update_zsh_autosuggestions.sh
-  zsh_aliases_exa_install: sh scripts/install_or_update_zsh_aliases_exa.sh
   mac_install_hostname: sh scripts/mac_install_hostname.sh
 config:
   backup: true
@@ -15,97 +12,18 @@ dotfiles:
   f_ideavimrc:
     src: ideavimrc
     dst: ~/.ideavimrc
-  f_zsh.aliases:
-    src: zsh.aliases
-    dst: ~/.zsh.aliases
-  f_zshrc.mac:
-    src: zshrc.mac
-    dst: ~/.zshrc.mac
-  f_zshrc:
-    src: zshrc
-    dst: ~/.zshrc
-    actions:
-    - zsh_autosuggestions_install
-    - zsh_aliases_exa_install
-  f_vimrc:
-    src: vimrc
-    dst: ~/.vimrc
-  f_plugins.vim:
-    src: vim/plugins.vim
-    dst: ~/.vim/plugins.vim
-    actions:
-    - plug_install
-  f_globals.vim:
-    src: vim/globals.vim
-    dst: ~/.vim/globals.vim
-  f_functions.vim:
-    src: vim/functions.vim
-    dst: ~/.vim/functions.vim
-  f_keybindings.vim:
-    src: vim/keybindings.vim
-    dst: ~/.vim/keybindings.vim
   f_tmux.conf:
     src: tmux.conf
     dst: ~/.tmux.conf
-  f_p10k.zsh:
-    src: p10k.zsh
-    dst: ~/.p10k.zsh
-  f_config:
-    src: config/termite/config
-    dst: ~/.config/termite/config
-  f_gtk.css:
-    src: config/gtk-3.0/gtk.css
-    dst: ~/.config/gtk-3.0/gtk.css
-  f_zshenv:
-    src: zshenv
-    dst: ~/.zshenv
-  f_solarized-dark.rasi:
-    src: config/rofi/solarized-dark.rasi
-    dst: ~/.config/rofi/solarized-dark.rasi
-  f_sxhkdrc:
-    src: config/sxhkd/sxhkdrc
-    dst: ~/.config/sxhkd/sxhkdrc
   f_mac_always:
     src:
     dst:
     actions:
     - mac_install_hostname
-  f_zshrc.shared:
-    src: zshrc.shared
-    dst: ~/.zshrc.shared
 profiles:
-  coolmaster:
-    dotfiles:
-    - f_gitconfig
-    - f_ideavimrc
-    - f_zsh.aliases
-    - f_zshrc
-    - f_p10k.zsh
-    - f_zshenv
-    - f_vimrc
-    - f_plugins.vim
-    - f_globals.vim
-    - f_functions.vim
-    - f_keybindings.vim
-    - f_tmux.conf
-    - f_config
-    - f_gtk.css
-    - f_solarized-dark.rasi
-    - f_sxhkdrc
   mac:
     dotfiles:
     - f_mac_always
     - f_gitconfig
     - f_ideavimrc
-    - f_zsh.aliases
-    - f_zshrc.mac
-    - f_zshrc
-    - f_p10k.zsh
-    - f_zshenv
-    - f_vimrc
-    - f_plugins.vim
-    - f_globals.vim
-    - f_functions.vim
-    - f_keybindings.vim
     - f_tmux.conf
-    - f_zshrc.shared
