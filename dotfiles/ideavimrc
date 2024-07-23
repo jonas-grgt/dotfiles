@@ -1,6 +1,35 @@
+set number                                    " line numbers
+set relativenumber                            " relative line numbers
+
+set hlsearch                                  " highlight search occurrences
+set ignorecase                                " ignore case in search patterns
+set smartcase                                 " no ignore case when pattern is uppercase
+set incsearch                                 " show search results while typing
+set wrapscan                                  " searches wrap around the end of the file
+
+set gdefault                                  " substitute all occurrences in line per default
+set history=10000                             " keep x lines of command line history
+set scrolloff=5 sidescrolloff=10              " keep some lines before and after the cursor visible
+set clipboard=unnamedplus,unnamed,ideaput     " integrate with system clipboard
+
+
+let mapleader = " "                           " set <leader> to <space>
+
+nnoremap <leader>vv :e ~/.ideavimrc<CR>       " edit .ideavimrc
+
 nnoremap dd "-dd
 nnoremap dw "-dw
 nnoremap D "-D
 nnoremap x "-x
 nnoremap cw "-cw
 nnoremap ct "-ct
+
+set ideajoin                                  " enable logical joining
+                                              " https://github.com/JetBrains/ideavim/blob/master/doc/ideajoin-examples.md
+
+set highlightedyank
+let g:highlightedyank_highlight_duration = "2000"
+
+set surround
+
+
