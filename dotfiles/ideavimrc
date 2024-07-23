@@ -30,6 +30,7 @@ set ideajoin                                  " enable logical joining
 set highlightedyank
 let g:highlightedyank_highlight_duration = "2000"
 
-set surround
+set surround                                  " change surrounding with `cs` 'test' -> "test"
+                                              " as in `cs'"` to change from single to double quotes 
 
 
