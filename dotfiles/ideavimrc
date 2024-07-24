@@ -23,6 +23,8 @@ nnoremap D "-D
 nnoremap x "-x
 nnoremap cw "-cw
 nnoremap ct "-ct
+nnoremap ci "-ci
+nnoremap di "-di
 
 set ideajoin                                  " enable logical joining
                                               " https://github.com/JetBrains/ideavim/blob/master/doc/ideajoin-examples.md
