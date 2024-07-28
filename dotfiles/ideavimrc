@@ -15,6 +15,9 @@ set clipboard=unnamedplus,unnamed,ideaput     " integrate with system clipboard
 
 let mapleader = " "                           " set <leader> to <space>
 
+nnoremap <Leader>nh :nohl<CR>                 " no highlight
+
+
 nnoremap dd "-dd
 nnoremap dw "-dw
 nnoremap D "-D
