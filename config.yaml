@@ -19,13 +19,18 @@ dotfiles:
     actions:
     - mac_install_hostname
     - install_tpm
+  f_config.kdl:
+    src: config/zellij/config.kdl
+    dst: ~/.config/zellij/config.kdl
 profiles:
   zbook:
     dotfiles:
     - f_gitconfig
     - f_ideavimrc
+    - f_config.kdl
   mac:
     dotfiles:
     - f_mac_always
     - f_gitconfig
     - f_ideavimrc
+    - f_config.kdl
