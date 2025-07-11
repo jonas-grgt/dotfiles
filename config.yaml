@@ -13,9 +13,6 @@ dotfiles:
   f_ideavimrc:
     src: ideavimrc
     dst: ~/.ideavimrc
-  f_tmux.conf:
-    src: tmux.conf
-    dst: ~/.tmux.conf
   f_mac_always:
     src:
     dst:
@@ -23,9 +20,12 @@ dotfiles:
     - mac_install_hostname
     - install_tpm
 profiles:
+  zbook:
+    dotfiles:
+    - f_gitconfig
+    - f_ideavimrc
   mac:
     dotfiles:
     - f_mac_always
     - f_gitconfig
     - f_ideavimrc
-    - f_tmux.conf
