@@ -22,15 +22,30 @@ dotfiles:
   f_config.kdl:
     src: config/zellij/config.kdl
     dst: ~/.config/zellij/config.kdl
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  f_aliases.zsh:
+    src: oh-my-zsh/custom/aliases.zsh
+    dst: ~/.oh-my-zsh/custom/aliases.zsh
+    chmod: '755'
+  f_aliases.wsl.zsh:
+    src: oh-my-zsh/custom/aliases.wsl.zsh
+    dst: ~/.oh-my-zsh/custom/aliases.wsl.zsh
 profiles:
   zbook:
     dotfiles:
     - f_gitconfig
     - f_ideavimrc
     - f_config.kdl
+    - f_zshrc
+    - f_aliases.zsh
+    - f_aliases.wsl.zsh
   mac:
     dotfiles:
     - f_mac_always
     - f_gitconfig
     - f_ideavimrc
     - f_config.kdl
+    - f_zshrc
+    - f_aliases.zsh
