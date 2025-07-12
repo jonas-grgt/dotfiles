@@ -80,7 +80,7 @@ setopt HIST_IGNORE_SPACE
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git 
-    git-commit
+  git-commit
 	mvn 
 	z 
 	docker 
@@ -88,7 +88,7 @@ plugins=(
 	copyfile 
 	fast-syntax-highlighting 
 	aws
-    alias-finder
+  alias-finder
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -126,6 +126,8 @@ source <(fzf --zsh)
 
 unsetopt correct
 unsetopt correct_all
+
+eval "$(starship init zsh)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

@@ -32,6 +32,9 @@ dotfiles:
   f_aliases.wsl.zsh:
     src: oh-my-zsh/custom/aliases.wsl.zsh
     dst: ~/.oh-my-zsh/custom/aliases.wsl.zsh
+  f_starship.toml:
+    src: config/starship.toml
+    dst: ~/.config/starship.toml
 profiles:
   zbook:
     dotfiles:
@@ -49,3 +52,4 @@ profiles:
     - f_config.kdl
     - f_zshrc
     - f_aliases.zsh
+    - f_starship.toml
