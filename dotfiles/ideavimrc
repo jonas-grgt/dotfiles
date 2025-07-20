@@ -17,6 +17,8 @@ let mapleader = " "                           " set <leader> to <space>
 
 nnoremap <Leader>nh :nohl<CR>                 " no highlight
 
+inoremap jj <ESC>
+
 
 nnoremap dd "-dd
 nnoremap dw "-dw
