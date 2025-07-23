@@ -79,8 +79,7 @@ setopt HIST_IGNORE_SPACE
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git 
-  git-commit
+	git git-commit
 	mvn 
 	z 
 	docker 
@@ -88,7 +87,7 @@ plugins=(
 	copyfile 
 	fast-syntax-highlighting 
 	aws
-  alias-finder
+	alias-finder
 )
 
 source $ZSH/oh-my-zsh.sh
