@@ -35,6 +35,9 @@ dotfiles:
   f_starship.toml:
     src: config/starship.toml
     dst: ~/.config/starship.toml
+  f_gpg-agent.conf:
+    src: gnupg/gpg-agent.conf
+    dst: ~/.gnupg/gpg-agent.conf
 profiles:
   zbook:
     dotfiles:
@@ -44,6 +47,7 @@ profiles:
     - f_zshrc
     - f_aliases.zsh
     - f_aliases.wsl.zsh
+    - f_gpg-agent.conf
   mac:
     dotfiles:
     - f_mac_always
@@ -53,3 +57,4 @@ profiles:
     - f_zshrc
     - f_aliases.zsh
     - f_starship.toml
+    - f_gpg-agent.conf
