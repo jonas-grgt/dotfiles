@@ -20,6 +20,8 @@ nnoremap <Leader>nh :nohl<CR>                 " no highlight
 inoremap jj <ESC>
 
 
+nnoremap NH :nohl<CR>
+
 nnoremap dd "-dd
 nnoremap dw "-dw
 nnoremap D "-D
