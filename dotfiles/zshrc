@@ -91,6 +91,7 @@ plugins=(
 	aws
 	alias-finder
 	man
+	thefuck
 )
 
 source $ZSH/oh-my-zsh.sh
