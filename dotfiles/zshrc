@@ -92,6 +92,7 @@ plugins=(
 	alias-finder
 	man
 	thefuck
+	docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
