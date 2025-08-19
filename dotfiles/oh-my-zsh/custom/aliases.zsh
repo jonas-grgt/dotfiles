@@ -6,4 +6,7 @@ alias glola='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgr
 alias gho='open_command "$(git config --get remote.origin.url | sed -e "s#git@.*\.*github\.com:#https://github.com/#" -e "s/\.git$//")"'
 alias opi='omz plugin info'
 alias zz=zellij
+alias sg=google
+alias sy=youtube
+alias sc=chatgpt
 
