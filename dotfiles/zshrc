@@ -1,5 +1,3 @@
-export PATH=/home/linuxbrew/.linuxbrew/bin/:$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH
-
 export GPG_TTY=$(tty)
 
 # Path to your Oh My Zsh installation.
@@ -72,9 +70,6 @@ setopt HIST_IGNORE_ALL_DUPS
 
 setopt HIST_IGNORE_SPACE
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -93,7 +88,7 @@ plugins=(
 	man
 	thefuck
 	docker-compose
-    web-search
+  web-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -129,19 +124,14 @@ SPACESHIP_PROMPT_ORDER=(
 
 source <(fzf --zsh)
 
+# disable automatic spelling correction and suggestion for all commands and arguments
 unsetopt correct
 unsetopt correct_all
 
 eval "$(starship init zsh)"
 
+[[ -s $HOME/.zshrc.mac ]] && source "$HOME/.zshrc.mac"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/jonas/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions

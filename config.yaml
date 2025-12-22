@@ -6,6 +6,8 @@ config:
   create: true
   dotpath: dotfiles
   diff_command: colordiff -y --suppress-common-lines {1} {0}
+trans_install:
+  directory_block_handle: rm -rf {{@@ _dotfile_abs_dst @@}}; cp -r {0} {1}
 dotfiles:
   f_gitconfig:
     src: gitconfig
@@ -38,6 +40,9 @@ dotfiles:
   f_gpg-agent.conf:
     src: gnupg/gpg-agent.conf
     dst: ~/.gnupg/gpg-agent.conf
+  f_zshrc.mac:
+    src: zshrc.mac
+    dst: ~/.zshrc.mac
 profiles:
   zbook:
     dotfiles:
@@ -58,3 +63,5 @@ profiles:
     - f_aliases.zsh
     - f_starship.toml
     - f_gpg-agent.conf
+    - d_nvim
+    - f_zshrc.mac
