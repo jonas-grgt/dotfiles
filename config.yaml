@@ -1,6 +1,5 @@
 actions:
   mac_install_hostname: sh scripts/mac_install_hostname.sh
-  install_tpm: sh scripts/install_tpm.sh
 config:
   backup: true
   create: true
@@ -20,7 +19,6 @@ dotfiles:
     dst:
     actions:
     - mac_install_hostname
-    - install_tpm
   f_config.kdl:
     src: config/zellij/config.kdl
     dst: ~/.config/zellij/config.kdl
@@ -43,10 +41,6 @@ dotfiles:
   f_zshrc.mac:
     src: zshrc.mac
     dst: ~/.zshrc.mac
-  d_nvim:
-    src: config/nvim
-    dst: ~/.config/nvim
-    trans_install: directory_block_handle
 profiles:
   zbook:
     dotfiles:
@@ -57,7 +51,6 @@ profiles:
     - f_aliases.zsh
     - f_aliases.wsl.zsh
     - f_gpg-agent.conf
-    - d_nvim
   mac:
     dotfiles:
     - f_mac_always
@@ -69,4 +62,3 @@ profiles:
     - f_starship.toml
     - f_gpg-agent.conf
     - f_zshrc.mac
-    - d_nvim
