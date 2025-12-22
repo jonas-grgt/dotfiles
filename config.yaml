@@ -41,6 +41,9 @@ dotfiles:
   f_zshrc.mac:
     src: zshrc.mac
     dst: ~/.zshrc.mac
+  f_wezterm.lua:
+    src: config/wezterm/wezterm.lua
+    dst: ~/.config/wezterm/wezterm.lua
 profiles:
   zbook:
     dotfiles:
@@ -62,3 +65,4 @@ profiles:
     - f_starship.toml
     - f_gpg-agent.conf
     - f_zshrc.mac
+    - f_wezterm.lua
