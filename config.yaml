@@ -57,6 +57,7 @@ profiles:
     - f_aliases.zsh
     - f_aliases.wsl.zsh
     - f_gpg-agent.conf
+    - d_nvim
   mac:
     dotfiles:
     - f_mac_always
