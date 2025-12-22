@@ -6,6 +6,8 @@ config:
   create: true
   dotpath: dotfiles
   diff_command: colordiff -y --suppress-common-lines {1} {0}
+trans_install:
+  directory_block_handle: rm -rf {{@@ _dotfile_abs_dst @@}}; cp -r {0} {1}
 dotfiles:
   f_gitconfig:
     src: gitconfig
@@ -44,6 +46,7 @@ dotfiles:
   d_nvim:
     src: config/nvim
     dst: ~/.config/nvim
+    trans_install: directory_block_handle
 profiles:
   zbook:
     dotfiles:
