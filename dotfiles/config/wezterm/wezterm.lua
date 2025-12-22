@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
-config.color_scheme = "Neon Night (Gogh)"
+config.color_scheme = "Nightfly (Gogh)"
 config.font_size = 12
 
 config.initial_cols = 120
