@@ -2,6 +2,7 @@
 
 format = """
 [](color_orange)\
+$username[@](bg:color_orange fg:color_fg0)$hostname\
 [](bg:color_yellow fg:color_orange)\
 $directory\
 [](fg:color_yellow bg:color_aqua)\
@@ -29,11 +30,17 @@ color_bg1 = '#3c3836'
 color_bg3 = '#665c54'
 color_blue = '#458588'
 color_aqua = '#689d6a'
-color_green = '#98971a'
+color_green = '#098971a'
 color_orange = '#d65d0e'
 color_purple = '#b16286'
 color_red = '#cc241d'
 color_yellow = '#d79921'
+color_black = '#000000'
+
+[hostname]
+ssh_only = false
+style = "bg:color_orange fg:color_fg0"
+format = "[$hostname]($style)"
 
 [os]
 disabled = false
@@ -61,13 +68,13 @@ Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
 [username]
-show_always = false
+show_always = true
 style_user = "bg:color_orange fg:color_fg0"
 style_root = "bg:color_orange fg:color_fg0"
-format = '[ $user ]($style)'
+format = '[$user]($style)'
 
 [directory]
-style = "fg:color_fg0 bg:color_yellow"
+style = "fg:color_black bg:color_yellow"
 format = "[ $path ]($style)"
 truncation_length = 5
 truncation_symbol = "…/"
