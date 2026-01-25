@@ -20,7 +20,7 @@
 [help]
 	autocorrect = 1
 [oh-my-zsh]
-	git-commit-alias = 537807c863a90c51a4ec6fbb6b818c3668472425
+	git-commit-alias = db66764f46104be3c8bd10ddf50bf38c3c885027
 [includeIf "gitdir:~/dev/bac/"]
     path = ~/dev/bac/.gitconfig
 [alias]
