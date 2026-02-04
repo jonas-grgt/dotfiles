@@ -13,6 +13,7 @@
     # Configure Git to ensure line endings in files you checkout are correct for macOS
     # https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
     autocrlf = input 
+	editor = nvim
 [push]
 	autoSetupRemote = true
 [color]
