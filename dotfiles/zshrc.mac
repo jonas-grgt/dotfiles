@@ -1,1 +1,2 @@
-export PATH="$PATH:/Users/jonas/.local/bin"
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
