@@ -12,6 +12,9 @@ set history=10000                             " keep x lines of command line his
 set scrolloff=5 sidescrolloff=10              " keep some lines before and after the cursor visible
 set clipboard=unnamedplus,unnamed,ideaput     " integrate with system clipboard
 
+set visualbell
+set noerrorbells
+
 
 let mapleader = " "                           " set <leader> to <space>
 
