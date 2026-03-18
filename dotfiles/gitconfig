@@ -21,7 +21,7 @@
 [help]
 	autocorrect = 1
 [oh-my-zsh]
-	git-commit-alias = 9df4ea095fe27ccd0ee95f2d34bab884c4a75585
+	git-commit-alias = bec3f2244a978d1e1391bc28964ba36a3cf0ad28
 [includeIf "gitdir:~/dev/bac/"]
     path = ~/dev/bac/.gitconfig
 [alias]
@@ -40,8 +40,8 @@
 [gpg]
 	program = gpg
 [commit]
-	gpgsign = true
+	gpgsign = false
 [tag]
-	gpgSign = true
+	gpgSign = false
 [init]
 	defaultBranch = main
